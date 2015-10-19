@@ -1,0 +1,2 @@
+class GateController < ApplicationController
+end
