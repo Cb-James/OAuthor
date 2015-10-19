@@ -1,7 +1,7 @@
 # The 3 steps of Oauth2
 class GateController < ApplicationController
   def door
-    redirect_to Gatekeeper.greetings
+    redirect_to Gatekeeper.greetings_url
   end
 
   def lock

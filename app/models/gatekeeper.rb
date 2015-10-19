@@ -9,7 +9,7 @@ class Gatekeeper < ActiveRecord::Base
     scope: 'wallet:accounts:read',
     host: 'sandbox.coinbase.com' }
 
-  def zuul.greetings
+  def zuul.greetings_url
     'https://' + @app[:host] + '/oauth/authorize?' \
       'response_type=code&state=SECURE_RANDOM' \
       '&client_id=' + @app[:id] + '&redirect_uri=' +
